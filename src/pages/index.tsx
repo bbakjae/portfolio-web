@@ -1,8 +1,40 @@
-import logo from '../../public/logo.png';
-import twitter from '../../public/twitter.png';
-import github from '../../public/github.png';
-import insta from '../../public/insta.png';
-import profile from '../../public/test.jpg';
+import { img } from './images';
+
+const {
+  github,
+  insta,
+  logo,
+  profile,
+  twitter,
+  apollo,
+  aws,
+  fxts,
+  gcp,
+  graphql,
+  maria,
+  nginx,
+  nodejs,
+  prisma,
+  python,
+  ts,
+  ubuntu,
+} = img;
+
+const techImages = [
+  apollo,
+  aws,
+  fxts,
+  gcp,
+  graphql,
+  maria,
+  nginx,
+  nodejs,
+  prisma,
+  python,
+  ts,
+  ubuntu,
+];
+const techIcon = () => techImages.map(v => <img className='stack-icon' src={v.src}></img>);
 const HomePage = () => {
   return (
     <div className='main-page'>
@@ -31,14 +63,18 @@ const HomePage = () => {
         <div className='intro-text'>
           Hi 👋, <br />
           My Name is <span className='name-gradient'>BBakJae</span> <br />
-          I'm a Server Developer
+          I'm a <span className='name-gradient'>{'{'} </span>Server Developer
+          <span className='name-gradient'> {'}'}</span>
         </div>
         <img src={profile.src} className='intro-img' />
       </div>
       <div className='stack'>
-        <div className='stack-title'>
-          My Stack List
-          <div className='stack-description'>Technologies I've been working with recently</div>
+        <div className='stack-title'>My Stack List</div>
+        <div className='stack-description'>Technologies I've been working with recently</div>
+        <div className='stack-icon-box'>
+          {techImages.map(v => (
+            <img className='stack-icon' src={v.src}></img>
+          ))}
         </div>
       </div>
     </div>
