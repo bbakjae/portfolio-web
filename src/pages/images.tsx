@@ -1,8 +1,8 @@
 import logo from '../../public/logo.png';
-import twitter from '../../public/twitter.png';
+import graphqlMenu from '../../public/graphql.png';
 import github from '../../public/github.png';
 import insta from '../../public/insta.png';
-import profile from '../../public/test.jpg';
+import profile from '../../public/profile.png';
 import apollo from '../../public/tech/apollo.png';
 import aws from '../../public/tech/aws.png';
 import fxts from '../../public/tech/fxts.png';
@@ -18,7 +18,7 @@ import ubuntu from '../../public/tech/ubuntu.png';
 
 export const img = {
   logo,
-  twitter,
+  graphqlMenu,
   github,
   insta,
   profile,

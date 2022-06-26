@@ -1,11 +1,12 @@
 import { img } from './images';
+import { projects } from './ProjectInfo';
 
 const {
   github,
   insta,
   logo,
   profile,
-  twitter,
+  graphqlMenu,
   apollo,
   aws,
   fxts,
@@ -52,10 +53,10 @@ const HomePage = () => {
           <a href='https://github.com' className='menu-icon'>
             <img src={github.src}></img>
           </a>
-          <a href='https://naver.com' className='menu-icon'>
-            <img src={twitter.src}></img>
+          <a href='https://api.bbakjae.me/graphql' className='menu-icon'>
+            <img src={graphqlMenu.src}></img>
           </a>
-          <a href='https://naver.com' className='menu-icon'>
+          <a href='https://www.instagram.com/bbak__jae/' className='menu-icon'>
             <img src={insta.src}></img>
           </a>
         </div>
@@ -71,9 +72,9 @@ const HomePage = () => {
         </div>
         <img src={profile.src} className='intro-img' />
       </div>
-
+      {/* Stack List */}
       <div className='stack'>
-        <div className='stack-title'>My Stack List</div>
+        <div className='stack-title'>Tech Stack</div>
         <div className='stack-description'>지금까지 실무에서 직접 사용했던 기술 스택입니다</div>
         <div className='stack-icon-box'>
           {techImages.map(v => (
@@ -81,6 +82,28 @@ const HomePage = () => {
           ))}
         </div>
       </div>
+      {/* Projects*/}
+      <div className='project'>
+        <div className='project-title'>Projects</div>
+        <div className='project-description'>지금까지 진행했던 프로젝트입니다</div>
+        <div className='scroll-next'>
+          Scroll Next <span className='arrow-right'></span>
+        </div>
+        <div className='project-box'>
+          {projects.map(v => {
+            return (
+              <div className='project-item-container'>
+                <img className='project-item-img' src={profile.src} />
+                <div className='project-item-title'>{v.title}</div>
+                <div className='project-item-content'>{v.content}</div>
+                <div className='project-item-part'>업무 : {v.part.join(', ')}</div>
+                <div className='project-item-techStack'>사용 스택 : {v.techStack.join(', ')}</div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <footer>123</footer>
     </div>
   );
 };
