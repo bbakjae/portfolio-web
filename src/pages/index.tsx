@@ -90,7 +90,8 @@ const HomePage = () => {
           Scroll Next <span className='arrow-right'></span>
         </div>
         <div className='project-box'>
-          {projects.map(v => {
+          {/* <div className='project-wrapper'> */}
+          {[projects, projects, projects, projects].flat().map(v => {
             return (
               <div className='project-item-container'>
                 <img className='project-item-img' src={profile.src} />
@@ -101,6 +102,7 @@ const HomePage = () => {
               </div>
             );
           })}
+          {/* </div> */}
         </div>
       </div>
       <footer>123</footer>

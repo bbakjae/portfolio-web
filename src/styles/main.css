@@ -66,13 +66,13 @@
   height: 30%;
   left: 10%;
   padding-top: 10%;
-  padding-bottom: 5% ;
+  padding-bottom: 5%;
   display: flex;
 }
 
 .intro-text {
   position: relative;
-  left:5%;
+  left: 5%;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: bold;
@@ -123,7 +123,7 @@
   font-size: 150%;
   color: #a7a7a7;
 }
-.stack-icon-box{
+.stack-icon-box {
   position: relative;
   left: 20%;
   width: 60%;
@@ -134,13 +134,13 @@
   flex-wrap: wrap;
   flex-direction: row;
 }
-.stack-icon{
+.stack-icon {
   margin: 3%;
   width: 10%;
   align-self: center;
 }
 
-.project{
+.project {
   position: relative;
   width: 100%;
 
@@ -166,10 +166,10 @@
   color: #a7a7a7;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
-.project-box{
+.project-box {
   position: relative;
   left: 10%;
   width: 80%;
@@ -177,24 +177,37 @@
   overflow-x: auto;
   flex-direction: row;
 }
-.project-item-container{
+@keyframes loopAnimation {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.project-wrapper {
+  animation: loopAnimation 100s linear infinite;
+  display: flex;
+  width: max-content;
+}
+.project-item-container {
+  animation: loopAnimation 5s linear infinite;
+
+  /* aspect-ratio: 0.5; */
   position: relative;
   min-width: 20%;
-  width: 25%;
+  /* width: 25%; */
   text-align: left;
   border-radius: 8%;
   background-color: #363636;
   margin: 3%;
   /* display: flex; */
 }
-.project-item-img{
+.project-item-img {
   position: relative;
   width: 100%;
   border-top-left-radius: 8%;
   border-top-right-radius: 8%;
   display: flex;
 }
-.project-item-title{
+.project-item-title {
   font-family: 'Poppins';
   font-style: bold;
   width: 100%;
@@ -202,7 +215,7 @@
   padding: 1%;
   font-size: 150%;
   display: flex;
-  color: #CCCCCC;
+  color: #cccccc;
 }
 .project-item-content {
   font-family: 'Poppins';
@@ -210,34 +223,34 @@
   padding: 3%;
   font-size: 100%;
 
-  color: #CCCCCC;
+  color: #cccccc;
 }
 .project-item-part {
-font-family: 'Poppins';
+  font-family: 'Poppins';
   font-style: normal;
   padding: 3%;
   font-size: 100%;
 
-  color: #CCCCCC;
+  color: #cccccc;
 }
 .project-item-techStack {
-font-family: 'Poppins';
+  font-family: 'Poppins';
   font-style: normal;
   padding: 3%;
   font-size: 100%;
 
-  color: #CCCCCC;
+  color: #cccccc;
 }
-.scroll-next{
+.scroll-next {
   position: relative;
   font-family: 'Poppins';
-  font-style:  normal;
+  font-style: normal;
   font-weight: bold;
   font-size: 100%;
   padding-left: 70%;
-  color: #CCCCCC;
+  color: #cccccc;
 }
-.arrow-right{
+.arrow-right {
   border: solid wheat;
   border-width: 0 3px 3px 0;
   display: inline-block;
