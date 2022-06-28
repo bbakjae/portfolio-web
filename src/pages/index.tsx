@@ -55,10 +55,10 @@ const HomePage = () => {
           <button className='menu-text-content'>Contact</button>
         </div>
         <div className='menu-icon-box'>
-          <a href='https://github.com' className='menu-icon'>
+          <a href='https://github.com/bbakjae' className='menu-icon'>
             <img src={github.src}></img>
           </a>
-          <a href='https://api.bbakjae.me/graphql' className='menu-icon'>
+          <a href='https://api.bbakjae.me/portfolio/graphql' className='menu-icon'>
             <img src={graphqlMenu.src}></img>
           </a>
           <a href='https://www.instagram.com/bbak__jae/' className='menu-icon'>
