@@ -1,3 +1,4 @@
+import { scrollToHome, scrollToTechStack } from './behavior';
 import { img } from './images';
 import { projects } from './ProjectInfo';
 
@@ -43,8 +44,12 @@ const HomePage = () => {
       <div className='menu-text-box'>
         <img className='menu-img' src={logo.src} />
         <div className='menu-text'>
-          <button className='menu-text-content'>Home</button>
-          <button className='menu-text-content'>About</button>
+          <button className='menu-text-content' onClick={scrollToHome}>
+            Home
+          </button>
+          <button className='menu-text-content' onClick={scrollToTechStack}>
+            About
+          </button>
           <button className='menu-text-content'>Tech&nbsp;Stack</button>
           <button className='menu-text-content'>Projects</button>
           <button className='menu-text-content'>Contact</button>
@@ -91,7 +96,7 @@ const HomePage = () => {
         </div>
         <div className='project-box'>
           {/* <div className='project-wrapper'> */}
-          {[projects, projects, projects, projects].flat().map(v => {
+          {[projects].flat().map(v => {
             return (
               <div className='project-item-container'>
                 <img className='project-item-img' src={profile.src} />
