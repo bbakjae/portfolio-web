@@ -21,8 +21,8 @@
 }
 .menu-img {
   position: relative;
-  width: fit-content;
-  height: fit-content;
+  width: 15%;
+  height: 100%;
   align-self: center;
   left: 3%;
   display: flex;
@@ -87,7 +87,7 @@
 }
 
 .name-gradient {
-  background: linear-gradient(to right, #e70faa, #13b0f5);
+  background: linear-gradient(to right, #b3b6eb, #e98a98);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -180,7 +180,7 @@
 }
 @keyframes loopAnimation {
   50% {
-    transform: translateX(-200%);
+    transform: translateX(-100%);
   }
 }
 .project-wrapper {
@@ -189,7 +189,7 @@
   width: max-content;
 }
 .project-item-container {
-  animation: loopAnimation 12s linear infinite;
+  animation: loopAnimation 10s linear infinite;
   /* animation-iteration-count: 5; */
 
   /* aspect-ratio: 0.5; */

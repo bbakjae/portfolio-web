@@ -15,6 +15,14 @@ import prisma from '../../public/tech/prisma.png';
 import python from '../../public/tech/python.png';
 import ts from '../../public/tech/ts.png';
 import ubuntu from '../../public/tech/ubuntu.png';
+import book from '../../public/project_img/book.jpg';
+import cake from '../../public/project_img/cake.jpg';
+import caps from '../../public/project_img/caps.jpg';
+import car from '../../public/project_img/car.jpg';
+import covid from '../../public/project_img/covid.jpg';
+import demolition from '../../public/project_img/demolition.jpg';
+import phone from '../../public/project_img/phone.jpg';
+import tablet from '../../public/project_img/tablet.jpg';
 
 export const img = {
   logo,
@@ -34,4 +42,15 @@ export const img = {
   python,
   ts,
   ubuntu,
+};
+
+export const projectImg = {
+  book,
+  cake,
+  caps,
+  car,
+  covid,
+  demolition,
+  phone,
+  tablet,
 };

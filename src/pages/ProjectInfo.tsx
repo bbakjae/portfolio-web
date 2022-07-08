@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image';
+import { projectImg } from './images';
 
 export type ProjectInfo = {
-  image?: StaticImageData;
   title: string;
   content: string;
   techStack: string[];
@@ -9,6 +9,7 @@ export type ProjectInfo = {
   startAt: Date;
   endAt: Date;
   landingPage?: string;
+  img: StaticImageData;
 };
 export const projects: ProjectInfo[] = [
   {
@@ -19,6 +20,7 @@ export const projects: ProjectInfo[] = [
     endAt: new Date('2020-05-31T00:00:00'),
     part: ['Leader', 'Machine Learning'],
     landingPage: undefined,
+    img: projectImg.caps,
   },
   {
     title: '철거 중계 플랫폼',
@@ -28,6 +30,7 @@ export const projects: ProjectInfo[] = [
     endAt: new Date('2021-11-31T00:00:00'),
     part: ['백엔드 개발'],
     landingPage: undefined,
+    img: projectImg.demolition,
   },
   {
     title: '케이키',
@@ -37,6 +40,7 @@ export const projects: ProjectInfo[] = [
     endAt: new Date('2020-12-31T00:00:00'),
     part: ['디비 설계', '서버 구축', ' 백엔드 개발'],
     landingPage: undefined,
+    img: projectImg.cake,
   },
   {
     title: '태블릿 포스기',
@@ -46,6 +50,7 @@ export const projects: ProjectInfo[] = [
     endAt: new Date('2022-01-31T00:00:00'),
     part: ['디비 설계', '서버 구축', ' 백엔드 개발'],
     landingPage: undefined,
+    img: projectImg.tablet,
   },
   {
     title: '책을 통한 소개팅 플랫폼',
@@ -55,6 +60,7 @@ export const projects: ProjectInfo[] = [
     endAt: new Date('2022-02-31T00:00:00'),
     part: ['디비 설계', '서버 구축', ' 백엔드 개발'],
     landingPage: undefined,
+    img: projectImg.book,
   },
   {
     title: '신속 항원 키드 검사 앱',
@@ -64,6 +70,7 @@ export const projects: ProjectInfo[] = [
     endAt: new Date('2022-03-15T00:00:00'),
     part: ['디비 설계', '서버 구축', ' 백엔드 개발'],
     landingPage: undefined,
+    img: projectImg.covid,
   },
   {
     title: '장기 렌트 플랫폼',
@@ -73,6 +80,7 @@ export const projects: ProjectInfo[] = [
     endAt: new Date('2022-03-15T00:00:00'),
     part: ['디비 설계', '서버 구축', ' 백엔드 개발'],
     landingPage: undefined,
+    img: projectImg.car,
   },
   {
     title: '구인 구직 플랫폼',
@@ -82,5 +90,6 @@ export const projects: ProjectInfo[] = [
     endAt: new Date('2020-05-31T00:00:00'),
     part: ['백엔드 개발'],
     landingPage: undefined,
+    img: projectImg.phone,
   },
 ];

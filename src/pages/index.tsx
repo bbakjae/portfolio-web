@@ -99,7 +99,7 @@ const HomePage = () => {
           {[projects].flat().map(v => {
             return (
               <div className='project-item-container'>
-                <img className='project-item-img' src={profile.src} />
+                <img className='project-item-img' src={v.img.src} />
                 <div className='project-item-title'>{v.title}</div>
                 <div className='project-item-content'>{v.content}</div>
                 <div className='project-item-part'>업무 : {v.part.join(', ')}</div>
