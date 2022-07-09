@@ -1,3 +1,5 @@
+import { redirect } from 'next/dist/server/api-utils';
+import { isMobile } from 'react-device-detect';
 import { scrollToHome, scrollToProject, scrollToTechStack } from './behavior';
 import { img } from './images';
 import { projects } from './ProjectInfo';
@@ -38,6 +40,9 @@ const techImages = [
 ];
 
 const HomePage = () => {
+  if (isMobile) {
+    window.location.href = 'https://m.bbakjae.me';
+  }
   return (
     <div className='main-page'>
       {/* 메뉴바 */}
