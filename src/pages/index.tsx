@@ -1,4 +1,4 @@
-import { scrollToHome, scrollToTechStack } from './behavior';
+import { scrollToHome, scrollToProject, scrollToTechStack } from './behavior';
 import { img } from './images';
 import { projects } from './ProjectInfo';
 
@@ -47,11 +47,13 @@ const HomePage = () => {
           <button className='menu-text-content' onClick={scrollToHome}>
             Home
           </button>
+          <button className='menu-text-content'>About</button>
           <button className='menu-text-content' onClick={scrollToTechStack}>
-            About
+            Tech&nbsp;Stack
           </button>
-          <button className='menu-text-content'>Tech&nbsp;Stack</button>
-          <button className='menu-text-content'>Projects</button>
+          <button className='menu-text-content' onClick={scrollToProject}>
+            Projects
+          </button>
           <button className='menu-text-content'>Contact</button>
         </div>
         <div className='menu-icon-box'>
@@ -110,7 +112,28 @@ const HomePage = () => {
           {/* </div> */}
         </div>
       </div>
-      <footer>123</footer>
+      <div className='contact'>
+        <div className='contact-left'>
+          <div>별명 : BBAKJAE</div>
+          <br></br>
+          <div>대표자 : 박재현</div>
+          <br></br>
+          <div>직업 : Server Developer</div>
+        </div>
+        <div className='contact-right'>
+          <div className='menu-icon-box'>
+            <a href='https://github.com/bbakjae' className='menu-icon'>
+              <img src={github.src}></img>
+            </a>
+            <a href='https://api.bbakjae.me/portfolio/graphql' className='menu-icon'>
+              <img src={graphqlMenu.src}></img>
+            </a>
+            <a href='https://www.instagram.com/bbak__jae/' className='menu-icon'>
+              <img src={insta.src}></img>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
