@@ -91,7 +91,8 @@ const HomePage = () => {
         {aboutData.map(v => {
           return (
             <div className='about-container'>
-              <div className='about-data-title'>{v.title}</div>
+              <span className='about-data-title-first-letter'>{v.title[0]}</span>
+              <div className='about-data-title'>{v.title.slice(1)}</div>
               <div className='about-bar'></div>
               <div className='about-data-content'>{v.content}</div>
             </div>
