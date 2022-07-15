@@ -118,7 +118,7 @@ const HomePage = () => {
         </div>
         <div className='project-box'>
           {/* <div className='project-wrapper'> */}
-          {[projects].flat().map(v => {
+          {[projects, projects, projects].flat().map(v => {
             return (
               <div className='project-item-container'>
                 <img className='project-item-img' src={v.img.src} />
