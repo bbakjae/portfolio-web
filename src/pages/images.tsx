@@ -23,8 +23,10 @@ import covid from '../../public/project_img/covid.jpg';
 import demolition from '../../public/project_img/demolition.jpg';
 import phone from '../../public/project_img/phone.jpg';
 import tablet from '../../public/project_img/tablet.jpg';
+import notion from '../../public/notion.png';
 
 export const img = {
+  notion,
   logo,
   graphqlMenu,
   github,

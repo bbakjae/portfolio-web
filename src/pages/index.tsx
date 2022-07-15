@@ -8,6 +8,7 @@ import { projects } from './ProjectInfo';
 const {
   github,
   insta,
+  notion,
   logo,
   profile,
   graphqlMenu,
@@ -69,8 +70,11 @@ const HomePage = () => {
           <a href='https://api.bbakjae.me/portfolio/graphql' className='menu-icon'>
             <img src={graphqlMenu.src}></img>
           </a>
-          <a href='https://www.instagram.com/bbak__jae/' className='menu-icon'>
-            <img src={insta.src}></img>
+          <a
+            href='https://towering-agate-4d8.notion.site/BBakJae-s-Notion-9062aecf3a8f44bd8c14c029e365dfc1'
+            className='menu-icon'
+          >
+            <img src={notion.src}></img>
           </a>
         </div>
       </div>
@@ -148,8 +152,11 @@ const HomePage = () => {
             <a href='https://api.bbakjae.me/portfolio/graphql' className='menu-icon'>
               <img src={graphqlMenu.src}></img>
             </a>
-            <a href='https://www.instagram.com/bbak__jae/' className='menu-icon'>
-              <img src={insta.src}></img>
+            <a
+              href='https://towering-agate-4d8.notion.site/BBakJae-s-Notion-9062aecf3a8f44bd8c14c029e365dfc1'
+              className='menu-icon'
+            >
+              <img src={notion.src}></img>
             </a>
           </div>
         </div>
