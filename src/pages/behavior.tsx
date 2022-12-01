@@ -5,11 +5,11 @@ export const scrollToHome = () => {
 };
 export const scrollToTechStack = () => {
   window.scrollTo({
-    top: 500,
+    top: 200,
   });
 };
 export const scrollToProject = () => {
   window.scrollTo({
-    top: 1500,
+    top: 1000,
   });
 };

@@ -121,7 +121,7 @@ const HomePage = () => {
         <div className='contact-left'>
           <div>별명 : BBAKJAE</div>
           <br></br>
-          <div>대표자 : 박재현</div>
+          <div>개발자 : 박재현</div>
           <br></br>
           <div>직업 : Server Developer</div>
         </div>
